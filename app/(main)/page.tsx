@@ -4,7 +4,6 @@ import AnalyticsChart from '@/components/dashboard/AnalyticsChart';
 import { Folder, MessageCircle, Newspaper, User } from 'lucide-react';
 
 export default function Home() {
-  console.log('Home component rendered');
   return (
     <>
       <div className='flex flex-col md:flex-row justify-between gap-5 mb-5'>
@@ -30,7 +29,7 @@ export default function Home() {
         />
       </div>
       <AnalyticsChart />
-      <PostsTable title='Latest Posts' limit= {5}/>
+      <PostsTable title='Latest Posts' limit={5} />
     </>
   );
 }
