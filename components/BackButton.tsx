@@ -1,23 +1,20 @@
-import { ArrowLeftCircle } from "lucide-react";
-import Link from "next/link";
+import { ArrowLeftCircle } from 'lucide-react';
+import Link from 'next/link';
 
-interface BackButtonProps{
-    text: string;
-    link: string;
+interface BackButtonProps {
+  text: string;
+  link: string;
 }
 
-import React from 'react'
-
-const backButton = ({text, link }: BackButtonProps) => {
+const BackButton = ({ text, link }: BackButtonProps) => {
   return (
-    <Link 
-    href={link}
-    className="textgray-500 hover:Underline flex items-center gap-1 font-Bold mb-5" 
+    <Link
+      href={link}
+      className='text-gray-500 hover:underline flex items-center gap-1 font-bold mb-5'
     >
-      <ArrowLeftCircle size={18} />
-      {text}
+      <ArrowLeftCircle size={18} /> {text}
     </Link>
-  )
-}
+  );
+};
 
-export default backButton
+export default BackButton;
